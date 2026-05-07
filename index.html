@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+       body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+
+    background: linear-gradient(-45deg, #ff6b6b, #6c5ce7, #00cec9, #0984e3);
+    background-size: 400% 400%;
+
+    animation: changeBackground 10s ease infinite;
+}
+
+/* BACKGROUND ANIMATION */
+
+@keyframes changeBackground {
+
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+        .container{
+            background-color: white;
+            width: 100%;
+            max-width: 600px;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        h1{
+            color: #1e3c72;
+            margin-bottom: 15px;
+            font-size: 2rem;
+        }
+
+        h2{
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .btn{
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #1e3c72;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        .btn:hover{
+            background-color: #16325c;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px){
+
+            .container{
+                padding: 25px;
+            }
+
+            h1{
+                font-size: 1.5rem;
+            }
+
+            h2{
+                font-size: 0.95rem;
+            }
+        }
+
+    
+    </style>
+</head>
+<body>
+
+    <h2>Reload The Page to  Generate Again</h2>
+    
+
+<script> 
+
+
+window.onload = function () {
+
+    let greet=prompt('Hello this is an Ai chatbot that will help you to introduce yourself just respond to the corresponding question');
+
+     let name=prompt('Hello what is your fullname?');
+     alert('ahh so your name is '+name);
+    
+     let age=(parseInt(prompt('How old are you?')));
+     alert('Great! it is good to know that you are '+age);
+
+     let hobby=prompt('And what is your hobby during your freetime?  ');
+     alert('Wow '+name+' thats was a cool hobby and a lot of people will be impressed if they knew  your hobby');
+
+     let color=prompt('what is your favorite color?');
+     alert('Woah ! '+color+' is my favorite color also')
+
+     let address=prompt('So last question '+name+' where do you lived?');
+     alert('Okay '+name+' now i know all of your information i will generate you  a full guide or script on how will you introduce yourself okay?');
+
+     alert('Hi Everyone! I am '+name+ ' im just  a simple person who has an age of '+age+ ' and my favorite hobby to do when i was on my free time is '+hobby+' that makes me happy everytime i do that stuff, and i lived at '+address+' my hometown is not that big but there is a lot of memory who stay there so if you wanna guys to come over just let me know  it wil be  fun');
+
+}
+
+</script>
+    
+</body>
+</html>
