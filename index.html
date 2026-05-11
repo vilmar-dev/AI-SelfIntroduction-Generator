@@ -164,10 +164,52 @@ window.onload = function () {
      alert('Woah ! '+color+' is my favorite color also')
 
      let address=prompt('So last question '+name+' where do you lived?');
+
+
+        let choice=prompt('Do you want to update some information? Yes/No');
+
+            if(choice=='yes'||choice=='YES'||choice=='Yes'){
+
+                let update=prompt('What do you want to update? \n 1.Name \n 2.Age \n3.Hobby \n 4.Favorite Color \n 5.Address');
+
+                    if(update=='1'){
+                         name=prompt('What is your name?');
+                    }
+                else if(update=='2'){
+                    age=prompt('How old are you?');
+                }
+
+                else if(update=='3'){
+                    hobby=prompt('What is your Hobby during your free time?');
+                }
+
+                else if(update=='4'){
+                    color=prompt('What is your favorite color?');
+                }
+
+                else if(update=='5'){
+                    address=prompt('Where do you lived);
+                }
+
+                
+                
+                                  
+            }
+
+        alert('Information updated!);
+    
      alert('Okay '+name+' now i know all of your information i will generate you  a full guide or script on how will you introduce yourself okay?');
 
+    alert('Name: '+name+
+          '\n Age: '+age+
+          '\n hobby: '+hobby+
+          '\n Favorite Color: '+color+
+          \n Address: '+address);
+    
      alert('Hi Everyone! I am '+name+ ' im just  a simple person who has an age of '+age+ ' and my favorite hobby to do when i was on my free time is '+hobby+' that makes me happy everytime i do that stuff, and i lived at '+address+' my hometown is not that big but there is a lot of memory who stay there so if you wanna guys to come over just let me know  it wil be  fun');
 
+
+    
 }
 
 </script>
